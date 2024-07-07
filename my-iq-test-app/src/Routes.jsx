@@ -1,15 +1,13 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Homepage';
 import IQTestPage from './pages/IQTestPage';
 
 const AppRoutes = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/IQTest" element={<IQTestPage />} />
-    </Routes>
-  </Router>
+  <Routes>
+    <Route path="/iq-test/" element={<HomePage />} />
+    <Route path="/iq-test/IQTest" element={<IQTestPage />} />
+  </Routes>
 );
 
 export default AppRoutes;
